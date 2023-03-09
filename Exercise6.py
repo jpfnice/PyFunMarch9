@@ -27,15 +27,17 @@ def isPrime(value):
     """
     if not isinstance(value, int):
         return False
+    
     if value <= 1:
         return False
+    
     divisor=2
     while divisor < value:
         if value % divisor == 0:
             return False
         divisor += 1
+        
     return True
-  
 
 
 test=[1,2,3,4,5,7,17,21,23,45,278,2771]
